@@ -55,7 +55,7 @@ export const About = () => {
             <h2 className="font-display text-3xl sm:text-4xl md:text-5xl lg:text-6xl text-primary leading-[1.15] sm:leading-[1.1] mb-5 sm:mb-6 text-balance">
               Expertos en <span className="italic text-accent">gestión empresarial</span> y cumplimiento normativo.
             </h2>
-            <p className="text-muted-foreground text-base sm:text-lg leading-relaxed mb-8 sm:mb-10">
+            <p className="text-muted-foreground text-base sm:text-lg leading-relaxed mb-8 sm:mb-10 text-justify">
               Somos una firma colombiana especializada en consultoría integral, sistemas de gestión y certificaciones
               internacionales. Combinamos experiencia técnica, metodología rigurosa y un acompañamiento cercano para
               que cada empresa alcance estándares de clase mundial.
@@ -69,7 +69,7 @@ export const About = () => {
                   </div>
                   <div className="min-w-0">
                     <h3 className="font-display text-lg sm:text-xl text-primary mb-1">{p.title}</h3>
-                    <p className="text-muted-foreground text-sm sm:text-base leading-relaxed">{p.text}</p>
+                    <p className="text-muted-foreground text-sm sm:text-base leading-relaxed text-justify">{p.text}</p>
                   </div>
                 </div>
               ))}
