@@ -66,7 +66,7 @@ export const Hero = () => {
           {/* Stats */}
           <div className="grid grid-cols-3 gap-3 sm:gap-6 md:gap-12 mt-12 sm:mt-16 max-w-2xl reveal-up" style={{ animationDelay: "0.4s" }}>
             {[
-              { n: "+25", l: "Años de experiencia" },
+              { n: "+20", l: "Años de experiencia" },
               { n: "+10", l: "Empresas asesoradas" },
               { n: "100%", l: "Compromiso con resultados" },
             ].map((s) => (
