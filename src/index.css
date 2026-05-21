@@ -1,0 +1,131 @@
+@import url('https://fonts.googleapis.com/css2?family=Libre+Baskerville:ital,wght@0,400;0,700;1,400&family=IBM+Plex+Sans:wght@300;400;500;600;700&display=swap');
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* PTM Design System — Ocean Deep palette + Libre Baskerville / IBM Plex Sans */
+
+@layer base {
+  :root {
+    /* Core surfaces */
+    --background: 210 40% 98%;
+    --foreground: 215 60% 12%;
+
+    --card: 0 0% 100%;
+    --card-foreground: 215 60% 12%;
+
+    --popover: 0 0% 100%;
+    --popover-foreground: 215 60% 12%;
+
+    /* Brand: Ocean Deep */
+    --primary: 215 70% 15%;          /* #0c2340 */
+    --primary-foreground: 195 50% 97%;
+    --primary-glow: 200 60% 40%;
+
+    --secondary: 207 60% 27%;        /* #1a4a6e */
+    --secondary-foreground: 195 50% 97%;
+
+    --accent: 190 56% 39%;           /* #2d8a9e */
+    --accent-foreground: 215 60% 12%;
+
+    --teal: 178 41% 55%;             /* #5cbdb9 */
+    --teal-foreground: 215 60% 12%;
+
+    --muted: 200 25% 94%;
+    --muted-foreground: 215 25% 38%;
+
+    --destructive: 0 70% 45%;
+    --destructive-foreground: 0 0% 98%;
+
+    --border: 210 25% 88%;
+    --input: 210 25% 88%;
+    --ring: 190 56% 39%;
+
+    --radius: 0.5rem;
+
+    /* Brand gradients */
+    --gradient-hero: linear-gradient(135deg, hsl(215 70% 12%) 0%, hsl(207 60% 22%) 50%, hsl(190 56% 32%) 100%);
+    --gradient-deep: linear-gradient(180deg, hsl(215 70% 15%) 0%, hsl(207 60% 22%) 100%);
+    --gradient-accent: linear-gradient(135deg, hsl(190 56% 39%), hsl(178 41% 55%));
+    --gradient-overlay: linear-gradient(180deg, hsl(215 70% 12% / 0.4) 0%, hsl(215 70% 12% / 0.85) 100%);
+
+    /* Shadows */
+    --shadow-elegant: 0 20px 60px -20px hsl(215 70% 15% / 0.35);
+    --shadow-glow: 0 0 40px hsl(190 56% 39% / 0.35);
+    --shadow-soft: 0 4px 20px -8px hsl(215 70% 15% / 0.15);
+
+    /* Motion */
+    --transition-smooth: cubic-bezier(0.4, 0, 0.2, 1);
+    --transition-bounce: cubic-bezier(0.34, 1.56, 0.64, 1);
+
+    --sidebar-background: 0 0% 98%;
+    --sidebar-foreground: 240 5.3% 26.1%;
+    --sidebar-primary: 240 5.9% 10%;
+    --sidebar-primary-foreground: 0 0% 98%;
+    --sidebar-accent: 240 4.8% 95.9%;
+    --sidebar-accent-foreground: 240 5.9% 10%;
+    --sidebar-border: 220 13% 91%;
+    --sidebar-ring: 217.2 91.2% 59.8%;
+  }
+}
+
+@layer base {
+  * {
+    @apply border-border;
+  }
+
+  html {
+    scroll-behavior: smooth;
+    overflow-x: hidden;
+  }
+
+  body {
+    @apply bg-background text-foreground antialiased;
+    font-family: 'IBM Plex Sans', system-ui, sans-serif;
+    font-feature-settings: "ss01", "cv11";
+    overflow-x: hidden;
+  }
+
+  h1, h2, h3, h4, .font-display {
+    font-family: 'Libre Baskerville', Georgia, serif;
+    font-weight: 700;
+    letter-spacing: -0.01em;
+  }
+}
+
+@layer utilities {
+  .bg-gradient-hero { background: var(--gradient-hero); }
+  .bg-gradient-deep { background: var(--gradient-deep); }
+  .bg-gradient-accent { background: var(--gradient-accent); }
+  .bg-gradient-overlay { background: var(--gradient-overlay); }
+
+  .shadow-elegant { box-shadow: var(--shadow-elegant); }
+  .shadow-glow { box-shadow: var(--shadow-glow); }
+  .shadow-soft { box-shadow: var(--shadow-soft); }
+
+  .text-balance { text-wrap: balance; }
+
+  .underline-grow {
+    @apply relative inline-block after:content-[''] after:absolute after:w-full after:scale-x-0 after:h-[2px] after:bottom-[-4px] after:left-0 after:bg-accent after:origin-bottom-right after:transition-transform after:duration-300 hover:after:scale-x-100 hover:after:origin-bottom-left;
+  }
+
+  .reveal-up {
+    animation: reveal-up 0.8s var(--transition-smooth) both;
+  }
+}
+
+@keyframes reveal-up {
+  from { opacity: 0; transform: translateY(24px); }
+  to { opacity: 1; transform: translateY(0); }
+}
+
+@keyframes float-slow {
+  0%, 100% { transform: translateY(0); }
+  50% { transform: translateY(-8px); }
+}
+
+@keyframes shimmer {
+  0% { background-position: -200% 0; }
+  100% { background-position: 200% 0; }
+}

@@ -1,0 +1,6 @@
+{
+  "name": "Consultores PTM",
+  "description": "Sitio web profesional de Consultores PTM con todas sus dependencias y componentes configurados.",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}
