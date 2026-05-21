@@ -1,7 +1,7 @@
 import { ArrowRight, ShieldCheck } from "lucide-react";
 import { Button } from "@/components/ui/button";
 import { siteConfig, whatsappLink, openWhatsApp } from "@/lib/site-config";
-import heroImg from "@/assets/hero-corporate.jpg";
+import { heroCorporateBase64 as heroImg } from "@/assets/hero-corporate-base64";
 
 export const Hero = () => {
   return (

@@ -1,7 +1,7 @@
 import { Mail, MapPin, MessageCircle, Phone } from "lucide-react";
 import { Button } from "@/components/ui/button";
 import { siteConfig, whatsappLink, openWhatsApp } from "@/lib/site-config";
-import bgContact from "@/assets/team-ptm.jpg";
+import { teamBase64 as bgContact } from "@/assets/team-base64";
 
 export const Contact = () => {
   return (

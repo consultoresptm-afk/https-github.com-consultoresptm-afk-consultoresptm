@@ -3,6 +3,7 @@ import { Menu, X, ExternalLink } from "lucide-react";
 import { Button } from "@/components/ui/button";
 import { siteConfig } from "@/lib/site-config";
 import { cn } from "@/lib/utils";
+import { logoBase64 } from "@/assets/logo-base64";
 
 const links = [
   { label: "Inicio", href: "#inicio" },
@@ -47,7 +48,7 @@ export const Navbar = () => {
             scrolled ? "bg-white" : "bg-white/95 ring-1 ring-primary-foreground/20"
           )}>
             <img
-              src="/Logo_corporativo.png"
+              src={logoBase64}
               alt="Logo Consultores PTM Gestión y Cumplimiento SAS"
               className="h-full w-full object-cover scale-[1.15]"
               width={48}

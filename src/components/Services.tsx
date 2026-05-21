@@ -1,7 +1,7 @@
 import { FileText, ExternalLink, MessageCircle, ArrowUpRight, Sparkles } from "lucide-react";
 import { Button } from "@/components/ui/button";
 import { siteConfig, whatsappLink, openWhatsApp } from "@/lib/site-config";
-import bgServicios from "@/assets/bg-servicios-ptm.jpg";
+import { bgServiciosBase64 as bgServicios } from "@/assets/bg-servicios-base64";
 
 export const Services = () => {
   return (

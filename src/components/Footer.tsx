@@ -1,4 +1,5 @@
 import { siteConfig } from "@/lib/site-config";
+import { logoBase64 } from "@/assets/logo-base64";
 
 export const Footer = () => {
   return (
@@ -8,7 +9,7 @@ export const Footer = () => {
           <div>
             <div className="flex items-center gap-3 mb-4">
               <div className="h-12 w-12 rounded-[14px] bg-white flex items-center justify-center overflow-hidden shadow-soft">
-                <img src="/Logo_corporativo.png" alt="Logo PTM" className="h-full w-full object-cover scale-[1.15]" width={48} height={48} loading="lazy" />
+                <img src={logoBase64} alt="Logo PTM" className="h-full w-full object-cover scale-[1.15]" width={48} height={48} loading="lazy" />
               </div>
               <div>
                 <div className="font-display text-sm">Consultores PTM</div>

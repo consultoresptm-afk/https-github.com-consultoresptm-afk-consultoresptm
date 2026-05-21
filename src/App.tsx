@@ -25,3 +25,5 @@ const App = () => (
 );
 
 export default App;
+
+// Sync trigger for Vercel deploy: Update Logo Corporativo Asset reference

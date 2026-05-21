@@ -1,5 +1,5 @@
 import { Target, Eye, Sparkles } from "lucide-react";
-import aboutImg from "@/assets/about-section.jpg";
+import { aboutSectionBase64 as aboutImg } from "@/assets/about-section-base64";
 
 const pillars = [
   {
