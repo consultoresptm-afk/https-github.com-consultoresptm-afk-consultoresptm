@@ -47,15 +47,21 @@ export const Contact = () => {
             </p>
 
             <div className="space-y-4 sm:space-y-5">
-              <a href={`mailto:${siteConfig.email}`} className="flex items-center gap-4 group">
+              <div className="flex items-center gap-4 group">
                 <div className="shrink-0 w-11 h-11 sm:w-12 sm:h-12 rounded-md bg-primary-foreground/10 border border-primary-foreground/20 flex items-center justify-center text-teal group-hover:bg-teal group-hover:text-primary transition-all duration-300">
                   <Mail className="w-5 h-5" />
                 </div>
                 <div className="min-w-0">
                   <div className="text-[10px] sm:text-xs uppercase tracking-widest text-primary-foreground/60">Email</div>
-                  <div className="text-primary-foreground font-medium text-sm sm:text-base break-all">{siteConfig.email}</div>
+                  <div className="flex flex-col gap-1">
+                    {siteConfig.emails.map((email) => (
+                      <a key={email} href={`mailto:${email}`} className="text-primary-foreground font-medium text-sm sm:text-base break-all hover:underline">
+                        {email}
+                      </a>
+                    ))}
+                  </div>
                 </div>
-              </a>
+              </div>
 
               <a href={whatsappLink} onClick={(e) => { e.preventDefault(); openWhatsApp(); }} target="_blank" rel="noopener noreferrer" className="flex items-center gap-4 group">
                 <div className="shrink-0 w-11 h-11 sm:w-12 sm:h-12 rounded-md bg-primary-foreground/10 border border-primary-foreground/20 flex items-center justify-center text-teal group-hover:bg-teal group-hover:text-primary transition-all duration-300">

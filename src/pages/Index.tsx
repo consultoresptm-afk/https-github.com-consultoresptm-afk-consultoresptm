@@ -7,6 +7,7 @@ import { Certifications } from "@/components/Certifications";
 import { Contact } from "@/components/Contact";
 import { Footer } from "@/components/Footer";
 import { WhatsAppFloat } from "@/components/WhatsAppFloat";
+import { siteConfig } from "@/lib/site-config";
 
 const Index = () => {
   useEffect(() => {
@@ -47,7 +48,7 @@ const Index = () => {
       url: window.location.origin,
       areaServed: "CO",
       address: { "@type": "PostalAddress", addressLocality: "Bogotá D.C.", addressCountry: "CO" },
-      email: "consultoresptm@gmail.com",
+      email: siteConfig.emails,
       telephone: "+573168203824",
     });
     document.head.appendChild(script);

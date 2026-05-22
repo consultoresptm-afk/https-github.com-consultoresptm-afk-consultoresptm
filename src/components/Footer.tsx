@@ -35,7 +35,9 @@ export const Footer = () => {
           <div>
             <div className="text-xs uppercase tracking-widest text-teal font-semibold mb-4">Contacto</div>
             <ul className="space-y-2 text-sm text-primary-foreground/70">
-              <li>{siteConfig.email}</li>
+              {siteConfig.emails.map((email) => (
+                <li key={email}>{email}</li>
+              ))}
               <li>{siteConfig.whatsappNumber}</li>
               <li>{siteConfig.city}</li>
             </ul>

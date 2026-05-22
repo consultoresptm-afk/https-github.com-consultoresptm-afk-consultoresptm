@@ -9,6 +9,7 @@ export const siteConfig = {
   whatsappNumber: "+573168203824",
   whatsappMessage: "Hola PTM, me interesa recibir asesoría personalizada.",
   email: "gerencia@consultoresptm.com",
+  emails: ["gerencia@consultoresptm.com", "info@consultoresptm.com"],
   city: "Bogotá D.C., Colombia",
 };
 
