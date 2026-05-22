@@ -7,6 +7,7 @@ export const siteConfig = {
   brochureUrl: "https://propuesta-ptm.vercel.app/",
   intranetUrl: "https://sistema-ptm.vercel.app/",
   whatsappNumber: "+573168203824",
+  whatsappNumbers: ["+57 316 820 3824", "+57 322 856 7651"],
   whatsappMessage: "Hola PTM, me interesa recibir asesoría personalizada.",
   email: "gerencia@consultoresptm.com",
   emails: ["gerencia@consultoresptm.com", "info@consultoresptm.com"],

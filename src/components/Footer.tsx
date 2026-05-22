@@ -38,7 +38,9 @@ export const Footer = () => {
               {siteConfig.emails.map((email) => (
                 <li key={email}>{email}</li>
               ))}
-              <li>{siteConfig.whatsappNumber}</li>
+              {siteConfig.whatsappNumbers.map((number) => (
+                <li key={number}>{number}</li>
+              ))}
               <li>{siteConfig.city}</li>
             </ul>
           </div>

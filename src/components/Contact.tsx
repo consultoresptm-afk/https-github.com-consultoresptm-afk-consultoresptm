@@ -63,15 +63,21 @@ export const Contact = () => {
                 </div>
               </div>
 
-              <a href={whatsappLink} onClick={(e) => { e.preventDefault(); openWhatsApp(); }} target="_blank" rel="noopener noreferrer" className="flex items-center gap-4 group">
+              <div className="flex items-center gap-4 group">
                 <div className="shrink-0 w-11 h-11 sm:w-12 sm:h-12 rounded-md bg-primary-foreground/10 border border-primary-foreground/20 flex items-center justify-center text-teal group-hover:bg-teal group-hover:text-primary transition-all duration-300">
                   <Phone className="w-5 h-5" />
                 </div>
                 <div className="min-w-0">
                   <div className="text-[10px] sm:text-xs uppercase tracking-widest text-primary-foreground/60">WhatsApp</div>
-                  <div className="text-primary-foreground font-medium text-sm sm:text-base">{siteConfig.whatsappNumber}</div>
+                  <div className="flex flex-col gap-1">
+                    {siteConfig.whatsappNumbers.map((number) => (
+                      <a key={number} href={`https://wa.me/${number.replace(/\s+/g, '')}`} target="_blank" rel="noopener noreferrer" className="text-primary-foreground font-medium text-sm sm:text-base hover:underline">
+                        {number}
+                      </a>
+                    ))}
+                  </div>
                 </div>
-              </a>
+              </div>
 
               <div className="flex items-center gap-4">
                 <div className="shrink-0 w-11 h-11 sm:w-12 sm:h-12 rounded-md bg-primary-foreground/10 border border-primary-foreground/20 flex items-center justify-center text-teal">
