@@ -8,7 +8,7 @@ export const siteConfig = {
   intranetUrl: "https://sistema-ptm.vercel.app/",
   whatsappNumber: "+573168203824",
   whatsappMessage: "Hola PTM, me interesa recibir asesoría personalizada.",
-  email: "consultoresptm@gmail.com",
+  email: "gerencia@consultoresptm.com",
   city: "Bogotá D.C., Colombia",
 };
 
