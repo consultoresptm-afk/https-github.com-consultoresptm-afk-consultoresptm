@@ -10,6 +10,7 @@ const links = [
   { label: "Sobre Nosotros", href: "#nosotros" },
   { label: "Servicios", href: "#servicios" },
   { label: "Certificaciones ISO", href: "#certificaciones" },
+  { label: "FAQ'S", href: "#seccion-faqs" },
   { label: "Contacto", href: "#contacto" },
 ];
 

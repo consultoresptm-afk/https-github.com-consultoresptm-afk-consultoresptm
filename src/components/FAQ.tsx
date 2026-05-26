@@ -1,5 +1,6 @@
 import { useState } from "react";
 import { motion, AnimatePresence } from "motion/react";
+import faqOfficeImg from "@/assets/images/faq_office_ptm_1779765822768.png";
 
 interface FAQItem {
   id: string;
@@ -53,7 +54,7 @@ export const FAQ = () => {
   };
 
   return (
-    <section id="faq" className="py-20 sm:py-24 bg-background border-t border-border/45">
+    <section id="seccion-faqs" className="py-20 sm:py-24 bg-background border-t border-border/45">
       <div className="max-w-6xl mx-auto flex flex-col lg:flex-row items-start justify-center gap-12 px-5 md:px-8">
         
         {/* Left column: Visual Representation */}
@@ -61,7 +62,8 @@ export const FAQ = () => {
           <div className="relative group rounded-2xl overflow-hidden shadow-elegant hover:shadow-glow transition-all duration-500">
             <img 
               className="w-full h-auto object-cover rounded-2xl transform group-hover:scale-105 transition-transform duration-700"
-              src="https://images.unsplash.com/photo-1555212697-194d092e3b8f?q=80&w=830&h=844&auto=format&fit=crop"
+              src={faqOfficeImg}
+              loading="lazy"
               referrerPolicy="no-referrer"
               alt="Consultores PTM Gestión y Cumplimiento" 
             />

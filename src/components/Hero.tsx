@@ -51,12 +51,11 @@ export const Hero = () => {
           </p>
 
           <div className="flex flex-col sm:flex-row gap-3 sm:gap-4 items-stretch sm:items-center reveal-up" style={{ animationDelay: "0.3s" }}>
-            <div className="rainbow relative z-0 overflow-hidden p-0.5 flex items-center justify-center rounded-full hover:scale-105 transition duration-300 active:scale-100 w-full sm:w-auto shadow-lg shadow-primary/25">
+            <div className="relative inline-block p-0.5 rounded-full overflow-hidden hover:scale-105 transition duration-300 active:scale-100 before:content-[''] before:absolute before:inset-0 before:bg-[conic-gradient(from_0deg,_#4ca4ff,_#5cbdb9,_#2d8a9e,_#4ca4ff)] button-wrapper w-full sm:w-auto shadow-lg shadow-primary/25">
               <a
                 href="#servicios"
                 onClick={(e) => { e.preventDefault(); document.querySelector("#servicios")?.scrollIntoView({ behavior: "smooth" }); }}
-                style={{ backgroundColor: "rgb(49, 132, 155)" }}
-                className="w-full sm:w-auto px-8 py-3 text-sm text-white rounded-full font-medium hover:brightness-110 flex items-center justify-center gap-2 transition-all duration-300"
+                className="relative z-10 w-full sm:w-auto px-8 py-3 text-sm text-white bg-primary rounded-full font-medium hover:bg-primary/90 flex items-center justify-center gap-2 transition-all duration-300"
               >
                 Ver nuestras soluciones
                 <ArrowRight className="w-4 h-4 text-teal shrink-0" />

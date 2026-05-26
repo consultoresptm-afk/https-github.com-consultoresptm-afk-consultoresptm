@@ -107,13 +107,18 @@ export const Services = () => {
                   Información clara, estructurada y lista para llevar tu empresa al siguiente nivel.
                 </h3>
 
-                <Button asChild variant="brochure" size="xl" className="mt-2">
-                  <a href={siteConfig.brochureUrl} target="_blank" rel="noopener noreferrer">
-                    <FileText />
+                <div className="rainbow relative z-0 overflow-hidden p-0.5 flex items-center justify-center rounded-full hover:scale-105 transition duration-300 active:scale-100 mt-2 w-full">
+                  <a 
+                    href={siteConfig.brochureUrl} 
+                    target="_blank" 
+                    rel="noopener noreferrer"
+                    className="relative z-10 w-full px-8 py-3.5 text-sm text-white rounded-full font-medium bg-gray-800 hover:bg-gray-700/95 flex items-center justify-center gap-2 transition-all duration-300 shadow-lg text-center"
+                  >
+                    <FileText className="w-4 h-4 shrink-0" />
                     Ver Brochure de Servicios
-                    <ExternalLink className="w-4 h-4 opacity-70" />
+                    <ExternalLink className="w-4 h-4 opacity-70 shrink-0" />
                   </a>
-                </Button>
+                </div>
 
                 <div className="text-center pt-4 border-t border-border">
                   <p className="text-sm text-muted-foreground mb-3">
