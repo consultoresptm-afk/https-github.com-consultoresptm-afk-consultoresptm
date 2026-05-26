@@ -14,6 +14,7 @@ export const Hero = () => {
           className="w-full h-full object-cover"
           width={1920}
           height={1280}
+          loading="eager"
           fetchpriority="high"
         />
         <div className="absolute inset-0 bg-gradient-overlay" />
