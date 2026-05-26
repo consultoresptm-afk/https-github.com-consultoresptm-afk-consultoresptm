@@ -54,8 +54,19 @@ export const FAQ = () => {
   };
 
   return (
-    <section id="seccion-faqs" className="py-20 sm:py-24 bg-background border-t border-border/45">
-      <div className="max-w-6xl mx-auto flex flex-col lg:flex-row items-start justify-center gap-12 px-5 md:px-8">
+    <section id="seccion-faqs" className="relative py-20 sm:py-24 bg-white border-t border-border/45 overflow-hidden">
+      {/* Background Grid */}
+      <div 
+        className="absolute inset-0 pointer-events-none opacity-[0.25]" 
+        style={{
+          backgroundImage: `
+            linear-gradient(to right, rgba(148, 163, 184, 0.2) 1px, transparent 1px),
+            linear-gradient(to bottom, rgba(148, 163, 184, 0.2) 1px, transparent 1px)
+          `,
+          backgroundSize: "60px 60px",
+        }}
+      />
+      <div className="relative z-10 max-w-6xl mx-auto flex flex-col lg:flex-row items-start justify-center gap-12 px-5 md:px-8">
         
         {/* Left column: Visual Representation */}
         <div className="w-full lg:w-5/12 max-w-sm mx-auto lg:mx-0 lg:sticky lg:top-24">
