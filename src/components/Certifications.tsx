@@ -97,8 +97,8 @@ export const Certifications = () => {
           <h2 className="font-display text-3xl sm:text-4xl md:text-5xl lg:text-6xl text-primary leading-[1.15] sm:leading-[1.1] mb-5 sm:mb-6 text-balance">
             Estándares internacionales que <span className="italic text-accent">elevan tu marca</span>.
           </h2>
-          <p className="text-muted-foreground text-base sm:text-lg leading-relaxed">
-            Obtener certificaciones ISO Colombia (9001, 14001, 45001) y sellos internacionales como BASC es el paso definitivo para la internacionalización y solidez de su empresa. En Consultores PTM implementamos sistemas de gestión que no solo otorgan un diploma, sino que mejoran sustancialmente la satisfacción del cliente y la productividad operativa. Acompañamos a su PYME en todo el ciclo: desde el diagnóstico inicial hasta la auditoría de certificación exitosa, garantizando el cumplimiento normativo exigido por ICONTEC, Bureau Veritas y otros organismos acreditados en el mercado nacional.
+          <p className="text-muted-foreground text-base sm:text-lg leading-relaxed text-justify">
+            Consolidar su empresa exige más que cumplimiento legal. La implementación estratégica de certificaciones ISO,  representa el aval definitivo de competitividad para su organización. Como su aliado estratégico, en Consultores PTM acompañamos a su empresa de principio a fin, transformando sus procesos internos en modelos de alta eficiencia. Diseñamos rutas de certificación blindadas que garantizan no solo el cumplimiento normativo, sino el aval exitoso frente a los organismos acreditadores más exigentes del mercado nacional e internacional.
           </p>
           <p className="text-xs sm:text-sm text-accent mt-3 font-medium">
             Haz clic en cualquier norma para conocer su contexto y beneficios.

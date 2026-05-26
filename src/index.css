@@ -129,3 +129,26 @@
   0% { background-position: -200% 0; }
   100% { background-position: 200% 0; }
 }
+
+@keyframes rotate-rainbow {
+  100% {
+    transform: rotate(1turn);
+  }
+}
+
+.rainbow::before {
+  content: '';
+  position: absolute;
+  z-index: -2;
+  left: -50%;
+  top: -50%;
+  width: 200%;
+  height: 200%;
+  background-position: 100% 50%;
+  background-repeat: no-repeat;
+  background-size: 50% 30%;
+  filter: blur(6px);
+  background-image: linear-gradient(#FF0A7F, #780EFF);
+  animation: rotate-rainbow 4s linear infinite;
+}
+

@@ -50,13 +50,18 @@ export const Hero = () => {
             de gestión, sostenibilidad y certificaciones ISO que llevan a las empresas al siguiente nivel.
           </p>
 
-          <div className="flex flex-col sm:flex-row gap-3 sm:gap-4 reveal-up" style={{ animationDelay: "0.3s" }}>
-            <Button asChild variant="hero" size="xl" className="w-full sm:w-auto">
-              <a href="#servicios" onClick={(e) => { e.preventDefault(); document.querySelector("#servicios")?.scrollIntoView({ behavior: "smooth" }); }}>
+          <div className="flex flex-col sm:flex-row gap-3 sm:gap-4 items-stretch sm:items-center reveal-up" style={{ animationDelay: "0.3s" }}>
+            <div className="rainbow relative z-0 overflow-hidden p-0.5 flex items-center justify-center rounded-full hover:scale-105 transition duration-300 active:scale-100 w-full sm:w-auto shadow-lg shadow-primary/25">
+              <a
+                href="#servicios"
+                onClick={(e) => { e.preventDefault(); document.querySelector("#servicios")?.scrollIntoView({ behavior: "smooth" }); }}
+                style={{ backgroundColor: "rgb(49, 132, 155)" }}
+                className="w-full sm:w-auto px-8 py-3 text-sm text-white rounded-full font-medium hover:brightness-110 flex items-center justify-center gap-2 transition-all duration-300"
+              >
                 Ver nuestras soluciones
-                <ArrowRight />
+                <ArrowRight className="w-4 h-4 text-teal shrink-0" />
               </a>
-            </Button>
+            </div>
             <Button asChild variant="outlineLight" size="xl" className="w-full sm:w-auto">
               <a href={whatsappLink} onClick={(e) => { e.preventDefault(); openWhatsApp(); }} target="_blank" rel="noopener noreferrer">
                 Hablar con un experto
