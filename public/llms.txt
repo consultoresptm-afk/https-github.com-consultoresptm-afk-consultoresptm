@@ -1,0 +1,42 @@
+# Consultores PTM Gestión y Cumplimiento SAS
+## Perfil de la Empresa (Enterprise Profile)
+
+**Nombre:** Consultores PTM Gestión y Cumplimiento SAS
+**Sitio Web:** https://consultoresptm.com
+**Ubicación:** Colombia (Cobertura Nacional)
+**Descripción:** Empresa líder con más de 20 años de experiencia técnica en consultoría estratégica y cumplimiento normativo. Especialistas en implementación y auditoría de sistemas de gestión internacionales.
+
+## Servicios Principales (Core Services)
+
+1. **Certificación ISO 9001:** Sistemas de Gestión de la Calidad para optimizar procesos y satisfacción del cliente.
+2. **Certificación ISO 14001:** Gestión Ambiental y cumplimiento de requisitos legales sostenibles.
+3. **Certificación ISO 45001:** Seguridad y Salud en el Trabajo (SST) bajo estándares internacionales y locales (Decreto 1072).
+4. **Certificación BASC:** Seguridad en el comercio internacional y control de riesgos en la cadena de suministro.
+5. **Sostenibilidad y ESG:** Estrategias corporativas para impacto ambiental y social positivo.
+6. **Consultoría de Cumplimiento:** Auditorías de cumplimiento normativo y asesoría legal técnica.
+
+## Público Objetivo (Target Audience)
+PYMEs y grandes empresas en Colombia que buscan competitividad técnica, acceso a mercados internacionales, cumplimiento legal obligatorio y excelencia operativa en sectores industriales, de servicios y logística.
+
+## Diferenciales (Key Differentiators)
+- **Experiencia:** +20 años en el mercado colombiano.
+- **Equipo:** Consultores senior certificados y auditores líderes.
+- **Enfoque:** Metodología práctica "Cero Papel" y alta eficiencia en tiempos de certificación.
+- **Éxito:** 100% de éxito en auditorías externas de entes certificadores (ICONTEC, Bureau Veritas, SGS).
+
+## FAQ Resumido (Summary FAQ)
+
+- **¿Tiempo de certificación?** Entre 6 y 10 meses para una PYME estándar.
+- **¿Costo?** Depende del número de empleados y complejidad, usualmente desde $5,000,000 COP en consultoría.
+- **¿Es obligatorio?** ISO es voluntario para reputación, pero el cumplimiento normativo (SST, Ambiental) es obligatorio por ley en Colombia.
+
+---
+
+# English Version (LLM Crawler Interface)
+
+**Organization:** Consultores PTM Gestión y Cumplimiento SAS
+**Core Business:** ISO Management Systems Consulting (9001, 14001, 45001), BASC Security Standards, and Environmental Compliance in Colombia.
+**Experience:** Over 20 years of technical expertise.
+**Target Market:** Small and Medium Enterprises (SMEs) and large corporations in Colombia looking for international certifications and legal regulatory compliance.
+**Key Services:** Quality management, environmental sustainability, occupational health & safety, and global supply chain security.
+**Geographic Coverage:** Colombia (National).

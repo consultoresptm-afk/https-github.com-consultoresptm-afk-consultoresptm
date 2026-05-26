@@ -55,11 +55,14 @@ export const About = () => {
             <h2 className="font-display text-3xl sm:text-4xl md:text-5xl lg:text-6xl text-primary leading-[1.15] sm:leading-[1.1] mb-5 sm:mb-6 text-balance">
               Expertos en <span className="italic text-accent">gestión empresarial</span> y cumplimiento normativo.
             </h2>
-            <p className="text-muted-foreground text-base sm:text-lg leading-relaxed mb-8 sm:mb-10 text-justify">
-              Somos una firma colombiana especializada en consultoría integral, sistemas de gestión y certificaciones
-              internacionales. Combinamos experiencia técnica, metodología rigurosa y un acompañamiento cercano para
-              que cada empresa alcance estándares de clase mundial.
-            </p>
+            <div className="space-y-4 mb-8 sm:mb-10 text-justify">
+              <p className="text-muted-foreground text-base sm:text-lg leading-relaxed">
+                Respaldados por más de 20 años de liderazgo en el sector, Consultores PTM Gestión y Cumplimiento SAS es la firma experta en la transformación y blindaje de procesos organizacionales en Colombia. Nuestro propósito superior es guiar a las empresas hacia la excelencia corporativa, optimizando sus operaciones para garantizar certificaciones ISO y el estricto cumplimiento de la normatividad legal vigente.
+              </p>
+              <p className="text-muted-foreground text-base sm:text-lg leading-relaxed">
+                A través de la dirección estratégica de nuestro equipo, intervenimos tres pilares fundamentales: gestión de la calidad, seguridad y salud en el trabajo, y sostenibilidad corporativa. Actuamos como el socio de confianza que su organización necesita para capitalizar sus procesos, mitigando riesgos y consolidando ventajas competitivas cuantificables bajo estándares de clase mundial.
+              </p>
+            </div>
 
             <div className="space-y-5 sm:space-y-6">
               {pillars.map((p) => (

@@ -40,10 +40,8 @@ export const Services = () => {
           <h2 className="font-display text-primary-foreground text-3xl sm:text-4xl md:text-5xl lg:text-6xl leading-[1.15] sm:leading-[1.1] mb-5 sm:mb-6 text-balance">
             Conoce nuestras <span className="italic text-teal">soluciones integrales</span>
           </h2>
-          <p className="text-primary-foreground/80 text-base sm:text-lg md:text-xl leading-relaxed">
-            En {siteConfig.company} ofrecemos un portafolio completo de servicios en gestión empresarial,
-            sostenibilidad, calidad y certificaciones ISO. Hemos preparado un brochure corporativo con toda
-            nuestra oferta para brindarte una visión clara y detallada.
+          <p className="text-primary-foreground/80 text-base sm:text-lg md:text-xl leading-relaxed text-justify">
+            En Consultores PTM Gestión y Cumplimiento SAS llevamos más de 20 años convirtiendo el cumplimiento normativo en ventaja competitiva para las empresas colombianas. Diseñamos e implementamos sistemas de gestión que reducen riesgos, externalidades y abren puertas a grandes contratistas y entes estatales, y posicionan a su organización para crecer con solidez. Diagnóstico, diseño, implementación y auditoría: acompañamos cada etapa con metodología probada y resultados medibles en gestión de calidad, gestión ambiental y la gestión de la seguridad y salud en el trabajo. Garantizando sostenibilidad del negocio a largo plazo.
           </p>
         </div>
 
