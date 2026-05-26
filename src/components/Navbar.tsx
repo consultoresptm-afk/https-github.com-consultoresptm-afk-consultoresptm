@@ -89,12 +89,17 @@ export const Navbar = () => {
               <ExternalLink className="ml-1" />
             </a>
           </Button>
-          <Button asChild variant="hero" size="sm">
-            <a href={siteConfig.intranetUrl} target="_blank" rel="noopener noreferrer">
+          <div className="button-bg rounded-full p-0.5 hover:scale-105 transition duration-300 active:scale-100 flex items-center justify-center">
+            <a 
+              href={siteConfig.intranetUrl} 
+              target="_blank" 
+              rel="noopener noreferrer"
+              className="px-5 text-xs py-2 text-white rounded-full font-medium bg-gray-800 hover:bg-gray-700/95 flex items-center gap-1 transition-all duration-300"
+            >
               Intranet
-              <ExternalLink className="ml-1" />
+              <ExternalLink className="w-3.5 h-3.5" />
             </a>
-          </Button>
+          </div>
         </div>
 
         <button
@@ -131,12 +136,17 @@ export const Navbar = () => {
                 <ExternalLink />
               </a>
             </Button>
-            <Button asChild variant="hero" className="w-full sm:w-auto">
-              <a href={siteConfig.intranetUrl} target="_blank" rel="noopener noreferrer">
+            <div className="button-bg rounded-full p-0.5 hover:scale-105 transition duration-300 active:scale-100 flex items-center justify-center w-full sm:w-auto">
+              <a 
+                href={siteConfig.intranetUrl} 
+                target="_blank" 
+                rel="noopener noreferrer"
+                className="w-full px-8 text-sm py-2.5 text-white rounded-full font-medium bg-gray-800 hover:bg-gray-700/95 flex items-center justify-center gap-2 transition-all duration-300"
+              >
                 Intranet
-                <ExternalLink />
+                <ExternalLink className="w-4 h-4" />
               </a>
-            </Button>
+            </div>
           </div>
         </div>
       </div>
