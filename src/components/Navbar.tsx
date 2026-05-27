@@ -4,6 +4,7 @@ import { Button } from "@/components/ui/button";
 import { siteConfig } from "@/lib/site-config";
 import { cn } from "@/lib/utils";
 import { logoBase64 } from "@/assets/logo-base64";
+import { useNavigate, useLocation } from "react-router-dom";
 
 const links = [
   { label: "Inicio", href: "#inicio" },
@@ -11,6 +12,7 @@ const links = [
   { label: "Dirección Ejecutiva", href: "#equipo" },
   { label: "Servicios", href: "#servicios" },
   { label: "Certificaciones ISO", href: "#certificaciones" },
+  { label: "Artículos", href: "#blog" },
   { label: "FAQ'S", href: "#seccion-faqs" },
   { label: "Contacto", href: "#contacto" },
 ];
@@ -18,6 +20,8 @@ const links = [
 export const Navbar = () => {
   const [scrolled, setScrolled] = useState(false);
   const [open, setOpen] = useState(false);
+  const navigate = useNavigate();
+  const location = useLocation();
 
   useEffect(() => {
     const onScroll = () => setScrolled(window.scrollY > 24);
@@ -29,8 +33,12 @@ export const Navbar = () => {
   const handleNav = (href: string) => {
     setOpen(false);
     if (href.startsWith("#")) {
-      const el = document.querySelector(href);
-      el?.scrollIntoView({ behavior: "smooth", block: "start" });
+      if (location.pathname !== '/') {
+        navigate('/' + href);
+      } else {
+        const el = document.querySelector(href);
+        el?.scrollIntoView({ behavior: "smooth", block: "start" });
+      }
     }
   };
 
