@@ -1,6 +1,7 @@
 import fs from 'fs';
-import { GoogleGenAI, Type } from '@google/genai';
+import Groq from 'groq-sdk';
 
+// Initialize API keys from environment variables
 const PEXELS_API_KEY = process.env.PEXELS_API_KEY;
 const GROQ_API_KEY = process.env.GROQ_API_KEY;
 const dataPath = './src/data/blog.json';
