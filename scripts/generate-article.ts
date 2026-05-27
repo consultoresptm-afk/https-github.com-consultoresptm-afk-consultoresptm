@@ -2,12 +2,12 @@ import fs from 'fs';
 import { GoogleGenAI, Type } from '@google/genai';
 
 const PEXELS_API_KEY = process.env.PEXELS_API_KEY;
-const GEMINI_API_KEY = process.env.GEMINI_API_KEY;
+const GROQ_API_KEY = process.env.GROQ_API_KEY;
 const dataPath = './src/data/blog.json';
 
 async function generateArticle() {
-  if (!GEMINI_API_KEY) {
-    console.error("Error: GEMINI_API_KEY no está configurada. Agrega este secreto en GitHub.");
+  if (!GROQ_API_KEY) {
+    console.error("Error: GROQ_API_KEY no está configurada.");
     process.exit(1);
   }
   if (!PEXELS_API_KEY) {
@@ -30,9 +30,9 @@ async function generateArticle() {
   ];
   const targetCategory = categories[Math.floor(Math.random() * categories.length)];
 
-  console.log(`Solicitando a Gemini un artículo sobre: ${targetCategory}...`);
+  console.log(`Solicitando a Groq un artículo sobre: ${targetCategory}...`);
   
-  const ai = new GoogleGenAI({ apiKey: GEMINI_API_KEY });
+  const groq = new Groq({ apiKey: GROQ_API_KEY });
   
   const prompt = `Escribe un artículo de blog sobre normativas en Colombia y buenas prácticas empresariales internacionales.
   Debe centrarse en novedades, leyes derogadas, actualizaciones normativas recientes o tendencias críticas para empresas.
@@ -45,37 +45,35 @@ async function generateArticle() {
   3. El tono debe ser institucional, consultivo, aportando gran valor técnico a gerentes, directores y coordinadores de sistemas de gestión.
   4. Formatea el artículo usando HTML estrictamente organizado. Usa <h2>, <p>, <ul>, <li> y <strong> obligatoriamente. No uses <html>, <body> ni estilos integrados.
   
-  Devuelve un JSON estrictamente estructurado con este formato:
-  - "titulo": "Título profesional llamativo"
-  - "slug": "slug-amigable-url"
-  - "categoria": "${targetCategory}"
-  - "seo_description": "Resumen persuasivo muy directo. Máximo 150 caracteres"
-  - "cuerpo_html": "Todo el cuerpo del documento usando las etiquetas semánticas de HTML"
-  - "pexels_search_query": "Máximo 3 palabras EN INGLÉS, ideal para buscar una foto pertinente en stock (ej. 'factory audit' o 'office meeting')"
-  `;
+  Devuelve la respuesta estrictamente en formato JSON con la siguiente estructura (no incluyas formato markdown ni texto adicional):
+  {
+    "titulo": "Título profesional llamativo",
+    "slug": "slug-amigable-url",
+    "categoria": "${targetCategory}",
+    "seo_description": "Resumen persuasivo muy directo. Máximo 150 caracteres",
+    "cuerpo_html": "Todo el cuerpo del documento usando las etiquetas semánticas de HTML",
+    "pexels_search_query": "Máximo 3 palabras EN INGLÉS, ideal para buscar una foto pertinente en stock"
+  }`;
 
   try {
-    const response = await ai.models.generateContent({
-      model: 'gemini-2.5-pro',
-      contents: prompt,
-      config: {
-        responseMimeType: "application/json",
-        responseSchema: {
-          type: Type.OBJECT,
-          properties: {
-            titulo: { type: Type.STRING },
-            slug: { type: Type.STRING },
-            categoria: { type: Type.STRING },
-            seo_description: { type: Type.STRING },
-            cuerpo_html: { type: Type.STRING },
-            pexels_search_query: { type: Type.STRING }
-          },
-          required: ["titulo", "slug", "categoria", "seo_description", "cuerpo_html", "pexels_search_query"]
+    const chatCompletion = await groq.chat.completions.create({
+      messages: [
+        {
+          role: "system",
+          content: "You are a specialized content generator agent. You must exclusively return valid JSON. Do not include markdown tags like \`\`\`json."
+        },
+        {
+          role: "user",
+          content: prompt
         }
-      }
+      ],
+      model: "llama3-70b-8192",
+      temperature: 0.7,
+      response_format: { type: "json_object" }
     });
 
-    const generatedContent = JSON.parse(response.text || "{}");
+    const outputText = chatCompletion.choices[0]?.message?.content || "{}";
+    const generatedContent = JSON.parse(outputText);
 
     console.log(`Tema generado exitosamente: "${generatedContent.titulo}"`);
     
@@ -127,7 +125,7 @@ async function generateArticle() {
     console.log(`[Éxito] Nuevo artículo procesado e insertado satisfactoriamente en blog.json.`);
 
   } catch (err) {
-    console.error("Hubo un error crítico en el flujo de generación con Gemini:", err);
+    console.error("Hubo un error crítico en el flujo de generación con Groq:", err);
     process.exit(1);
   }
 }
