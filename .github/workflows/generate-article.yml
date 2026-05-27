@@ -1,0 +1,41 @@
+name: Generate Blog Article
+
+on:
+  schedule:
+    # Ejecuta a la medianoche (00:00 UTC) cada 5 días.
+    - cron: '0 0 */5 * *'
+  workflow_dispatch: # Permite ejecución manual desde GitHub
+
+permissions:
+  contents: write
+
+jobs:
+  generate-and-publish:
+    runs-on: ubuntu-latest
+    
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v4
+
+      - name: Setup Node.js
+        uses: actions/setup-node@v4
+        with:
+          node-version: '20'
+
+      - name: Install dependencies
+        run: npm install
+
+      - name: Run Article Generator
+        run: npx tsx scripts/generate-article.ts
+        env:
+          PEXELS_API_KEY: ${{ secrets.PEXELS_API_KEY }}
+          # Si decides integrar Gemini u otra IA en el futuro, puedes agregar la llave aquí:
+          # GEMINI_API_KEY: ${{ secrets.GEMINI_API_KEY }}
+
+      - name: Commit and Push changes
+        run: |
+          git config --local user.email "github-actions[bot]@users.noreply.github.com"
+          git config --local user.name "github-actions[bot]"
+          git add src/data/blog.json
+          git commit -m "📝 feat: agregar nuevo artículo automatizado al blog" || echo "No hay cambios para confirmar"
+          git push
