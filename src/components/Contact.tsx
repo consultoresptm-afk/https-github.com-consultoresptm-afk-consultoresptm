@@ -122,7 +122,13 @@ export const Contact = () => {
                 <label className="text-xs uppercase tracking-wider text-muted-foreground font-semibold">¿En qué podemos ayudarte?</label>
                 <textarea required name="mensaje" rows={4} className="mt-2 w-full px-4 py-3 bg-background border border-border rounded-md focus:outline-none focus:border-accent focus:ring-2 focus:ring-accent/20 transition resize-none" />
               </div>
-              <Button type="submit" variant="hero" size="lg" className="w-full">
+              <div className="flex items-start gap-3 mt-4">
+                <input required type="checkbox" id="privacy" name="privacy" className="mt-1 w-4 h-4 rounded border-border text-teal focus:ring-teal" />
+                <label htmlFor="privacy" className="text-xs text-muted-foreground leading-tight">
+                  He leído y acepto la <a href="/politica-de-privacidad" className="text-teal hover:underline" target="_blank" rel="noopener noreferrer">Política de Privacidad y Tratamiento de Datos Personales</a>.
+                </label>
+              </div>
+              <Button type="submit" variant="hero" size="lg" className="w-full mt-2">
                 <MessageCircle />
                 Enviar por WhatsApp
               </Button>

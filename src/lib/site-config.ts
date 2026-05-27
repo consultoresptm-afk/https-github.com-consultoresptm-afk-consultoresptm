@@ -11,6 +11,8 @@ export const siteConfig = {
   whatsappMessage: "Hola PTM, me interesa recibir asesoría personalizada.",
   email: "gerencia@consultoresptm.com",
   emails: ["gerencia@consultoresptm.com", "info@consultoresptm.com"],
+  phone: "+57 316 820 3824",
+  address: "Carrera 21 N° 64 Sur - 79",
   city: "Bogotá D.C., Colombia",
 };
 

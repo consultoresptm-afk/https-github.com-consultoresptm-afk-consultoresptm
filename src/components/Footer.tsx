@@ -34,21 +34,37 @@ export const Footer = () => {
 
           <div>
             <div className="text-xs uppercase tracking-widest text-teal font-semibold mb-4">Contacto</div>
-            <ul className="space-y-2 text-sm text-primary-foreground/70">
-              {siteConfig.emails.map((email) => (
-                <li key={email}>{email}</li>
-              ))}
-              {siteConfig.whatsappNumbers.map((number) => (
-                <li key={number}>{number}</li>
-              ))}
-              <li>{siteConfig.city}</li>
+            <ul className="space-y-3 text-sm text-primary-foreground/70">
+              <li className="flex flex-col">
+                <span className="font-semibold text-primary-foreground/90 mb-1">Dirección</span>
+                <span>{siteConfig.address}</span>
+                <span>{siteConfig.city}</span>
+              </li>
+              <li className="flex flex-col">
+                <span className="font-semibold text-primary-foreground/90 mb-1">Contacto</span>
+                <span>Línea: <a href={`tel:${siteConfig.phone.replace(/[^0-9+]/g, '')}`} className="hover:text-primary-foreground transition">{siteConfig.phone}</a></span>
+                <span>WhatsApp: {siteConfig.whatsappNumbers.join(' / ')}</span>
+              </li>
+              <li className="flex flex-col">
+                <span className="font-semibold text-primary-foreground/90 mb-1">Correos</span>
+                {siteConfig.emails.map((email) => (
+                  <a key={email} href={`mailto:${email}`} className="hover:text-primary-foreground transition">{email}</a>
+                ))}
+              </li>
+              <li className="flex flex-col mt-2">
+                <span className="font-semibold text-primary-foreground/90 mb-1">Horario de Atención</span>
+                <span>Lunes - Viernes (7 am - 5 pm)</span>
+              </li>
             </ul>
           </div>
         </div>
 
-        <div className="mt-12 pt-6 border-t border-primary-foreground/10 flex flex-col md:flex-row justify-between gap-4 text-xs text-primary-foreground/50">
+        <div className="mt-12 pt-6 border-t border-primary-foreground/10 flex flex-col md:flex-row justify-between items-center gap-4 text-xs text-primary-foreground/50">
           <div>© {new Date().getFullYear()} {siteConfig.company}. Todos los derechos reservados.</div>
-          <div>NIT registrado · Bogotá D.C.</div>
+          <div className="flex gap-4">
+            <a href="/politica-de-privacidad" className="hover:text-primary-foreground transition underline underline-offset-2">Política de Privacidad y Tratamiento de Datos</a>
+            {/* El NIT se agregará aquí posteriormente */}
+          </div>
         </div>
       </div>
     </footer>

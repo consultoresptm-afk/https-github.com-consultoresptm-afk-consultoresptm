@@ -46,8 +46,7 @@ export const Hero = () => {
           </h1>
 
           <p className="text-primary-foreground/80 text-base sm:text-lg md:text-xl max-w-2xl mb-8 sm:mb-10 leading-relaxed reveal-up" style={{ animationDelay: "0.2s" }}>
-            En <strong className="text-primary-foreground font-semibold">{siteConfig.company}</strong> diseñamos soluciones integrales
-            de gestión, sostenibilidad y certificaciones ISO que llevan a las empresas al siguiente nivel.
+            <strong className="text-primary-foreground font-semibold">{siteConfig.company}</strong> se especializa en la implementación y mantenimiento de sistemas de gestión, plan estratégico y sostenibilidad corporativa para llevar a las empresas al siguiente nivel.
           </p>
 
           <div className="flex flex-col sm:flex-row gap-3 sm:gap-4 items-stretch sm:items-center reveal-up" style={{ animationDelay: "0.3s" }}>
