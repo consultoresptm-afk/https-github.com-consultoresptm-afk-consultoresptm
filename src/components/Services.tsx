@@ -42,7 +42,7 @@ export const Services = () => {
           </h2>
           <div className="text-primary-foreground/80 text-base sm:text-lg md:text-xl leading-relaxed text-justify space-y-4">
             <p>
-              En Consultores PTM Gestión y Cumplimiento SAS llevamos más de 20 años convirtiendo el cumplimiento normativo en ventaja competitiva para las empresas colombianas. Diseñamos e implementamos sistemas de gestión que reducen riesgos, externalidades y abren puertas a grandes contratistas y entes estatales, y posicionan a su organización para crecer con solidez.
+              En Consultores PTM Gestión y Cumplimiento SAS llevamos más de 20 años convirtiendo el cumplimiento normativo en ventaja competitiva para las empresas colombianas. Diseñamos e implementamos sistemas de gestión que reducen riesgos, externalidades y abren puertas a grandes contratistas y entes estatales, y posicionan a su organización para crecer con solidez y estrategia.
             </p>
             <p>
               Diagnóstico, diseño, implementación y auditoría: acompañamos cada etapa con metodología probada y resultados medibles en gestión de calidad, gestión ambiental y la gestión de la seguridad y salud en el trabajo. Garantizando sostenibilidad del negocio a largo plazo.
