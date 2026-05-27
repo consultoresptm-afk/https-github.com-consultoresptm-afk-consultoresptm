@@ -29,13 +29,12 @@ jobs:
         run: npx tsx scripts/generate-article.ts
         env:
           PEXELS_API_KEY: ${{ secrets.PEXELS_API_KEY }}
-          # Si decides integrar Gemini u otra IA en el futuro, puedes agregar la llave aquí:
-          # GEMINI_API_KEY: ${{ secrets.GEMINI_API_KEY }}
+          GEMINI_API_KEY: ${{ secrets.GEMINI_API_KEY }}
 
       - name: Commit and Push changes
         run: |
           git config --local user.email "github-actions[bot]@users.noreply.github.com"
           git config --local user.name "github-actions[bot]"
           git add src/data/blog.json
-          git commit -m "📝 feat: agregar nuevo artículo automatizado al blog" || echo "No hay cambios para confirmar"
+          git commit -m "📝 feat: agregar nuevo artículo automatizado generado con IA" || echo "No hay cambios para confirmar"
           git push
