@@ -68,7 +68,7 @@ async function generateArticle() {
           content: prompt
         }
       ],
-      model: "llama3-70b-8192",
+      model: "llama-3.3-70b-versatile",
       temperature: 0.7,
       response_format: { type: "json_object" }
     });
