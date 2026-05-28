@@ -1,13 +1,10 @@
 import fs from 'fs';
-import path from 'path';
 import Groq from 'groq-sdk';
 
-// Inicializar variables de entorno
+// Initialize API keys from environment variables
 const PEXELS_API_KEY = process.env.PEXELS_API_KEY;
-const GROQ_API_KEY = process.env.GROQ_API_KEY;
-
-// Uso de path y process.cwd() para garantizar la ruta exacta en GitHub Actions
-const dataPath = path.join(process.cwd(), 'src', 'data', 'blog.json');
+const GROQ_API_KEY = process.env.GROQ_API_KEY 
+const dataPath = './src/data/blog.json';
 
 async function generateArticle() {
   if (!GROQ_API_KEY) {
@@ -20,20 +17,7 @@ async function generateArticle() {
   }
 
   console.log("Cargando la base de artículos...");
-  let data: any[] = [];
-  
-  // Validación de seguridad por si el archivo no existe o está corrupto
-  try {
-    if (fs.existsSync(dataPath)) {
-      const fileContent = fs.readFileSync(dataPath, 'utf8');
-      data = fileContent ? JSON.parse(fileContent) : [];
-    } else {
-      console.warn(`Advertencia: No se encontró blog.json en ${dataPath}. Se creará una nueva base de datos.`);
-    }
-  } catch (err) {
-    console.error(`Error crítico al intentar leer o parsear ${dataPath}:`, err);
-    process.exit(1);
-  }
+  const data = JSON.parse(fs.readFileSync(dataPath, 'utf8'));
 
   // Extraer títulos recientes para decirle a la IA que no los repita
   const recentTitles = data.slice(0, 20).map((p: any) => p.titulo).join("\n- ");
@@ -62,7 +46,7 @@ async function generateArticle() {
   3. El tono debe ser institucional, consultivo, aportando gran valor técnico a gerentes, directores y coordinadores de sistemas de gestión.
   4. Formatea el artículo usando HTML estrictamente organizado. Usa <h2>, <p>, <ul>, <li> y <strong> obligatoriamente. No uses <html>, <body> ni estilos integrados.
   
-  Devuelve la respuesta estrictamente en JSON con la siguiente estructura (no incluyas formato markdown ni texto adicional):
+  Devuelve la respuesta estrictamente en formato JSON con la siguiente estructura (no incluyas formato markdown ni texto adicional):
   {
     "titulo": "Título profesional llamativo",
     "slug": "slug-amigable-url",
@@ -77,7 +61,7 @@ async function generateArticle() {
       messages: [
         {
           role: "system",
-          content: "You are a specialized content generator agent. You must exclusively return valid JSON. Do not include markdown tags like ```json."
+          content: "You are a specialized content generator agent. You must exclusively return valid JSON. Do not include markdown tags like \`\`\`json."
         },
         {
           role: "user",
@@ -101,6 +85,7 @@ async function generateArticle() {
       const json = await pexelsRes.json();
       
       if (json.photos && json.photos.length > 0) {
+        // Validar también en Pexels que no hayamos usado la imagen antes
         const usedImageIds = new Set(data.map((p: any) => p.imagen));
         
         for (const photo of json.photos) {
@@ -117,10 +102,10 @@ async function generateArticle() {
     }
 
     if (!newImage) {
-       newImage = "[https://images.unsplash.com/photo-1542621334-a254cf47733d?q=80&w=1200&auto=format&fit=crop](https://images.unsplash.com/photo-1542621334-a254cf47733d?q=80&w=1200&auto=format&fit=crop)";
+       newImage = "https://images.unsplash.com/photo-1542621334-a254cf47733d?q=80&w=1200&auto=format&fit=crop";
     }
 
-    const newId = data.length > 0 ? Math.max(...data.map((p: any) => p.id)) + 1 : 1;
+    const newId = Math.max(...data.map((p: any) => p.id), 0) + 1;
     const today = new Date().toISOString().split('T')[0];
 
     const newArticle = {
@@ -137,12 +122,6 @@ async function generateArticle() {
     // Agregamos al comienzo para que sea el primero en mostrarse en el blog
     data.unshift(newArticle);
     
-    // Asegurar que el directorio exista antes de guardar
-    const dir = path.dirname(dataPath);
-    if (!fs.existsSync(dir)) {
-      fs.mkdirSync(dir, { recursive: true });
-    }
-
     fs.writeFileSync(dataPath, JSON.stringify(data, null, 2));
     console.log(`[Éxito] Nuevo artículo procesado e insertado satisfactoriamente en blog.json.`);
 
