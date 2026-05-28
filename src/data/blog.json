@@ -1,5 +1,15 @@
 [
   {
+    "id": 26,
+    "titulo": "Evolución de la Gestión Ambiental en Colombia",
+    "slug": "gestion-ambiental-colombia",
+    "fecha": "2026-05-28",
+    "categoria": "Gestión Ambiental",
+    "imagen": "https://images.pexels.com/photos/14024422/pexels-photo-14024422.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940",
+    "seo_description": "Gestión Ambiental en Colombia, novedades y tendencias",
+    "cuerpo_html": "<h2>Introducción a la Gestión Ambiental</h2><p>La gestión ambiental en Colombia ha experimentado un gran avance en los últimos años, con la implementación de nuevas normativas y políticas que buscan proteger el medio ambiente y promover el desarrollo sostenible.</p><h2>Novedades en la legislación ambiental</h2><p>Recientemente, se han derogado varias leyes y se han implementado nuevas normativas que buscan fortalecer la gestión ambiental en el país. Algunas de las novedades más destacadas incluyen:</p><ul><li>La implementación de la <strong>Política Nacional de Gestión Ambiental</strong>, que busca promover la conservación y el uso sostenible de los recursos naturales.</li><li>La creación de la <strong>Autoridad Nacional de Licencias Ambientales</strong>, que se encarga de evaluar y aprobar los proyectos que puedan tener un impacto ambiental significativo.</li><li>La obligatoriedad de realizar <strong>estudios de impacto ambiental</strong> para todos los proyectos que puedan generar un impacto ambiental significativo.</li></ul><h2>Tendencias críticas para empresas</h2><p>En cuanto a las tendencias críticas para empresas, es importante destacar que la gestión ambiental es un aspecto clave para cualquier organización que busque ser sostenible y responsable con el medio ambiente. Algunas de las tendencias más destacadas incluyen:</p><ul><li>La <strong>adopción de prácticas de economía circular</strong>, que buscan reducir el consumo de recursos naturales y minimizar los residuos.</li><li>La <strong>implementación de sistemas de gestión ambiental</strong>, que buscan promover la eficiencia y la eficacia en la gestión ambiental.</li><li>La <strong>inversión en tecnologías limpias</strong>, que buscan reducir la huella de carbono y promover la sostenibilidad.</li></ul>"
+  },
+  {
     "id": 1,
     "titulo": "Cumplimiento Ambiental: Lo que debes saber sobre el Decreto 1076 de 2015",
     "categoria": "Gestión Ambiental",
