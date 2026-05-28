@@ -3,7 +3,7 @@ import Groq from 'groq-sdk';
 
 // Initialize API keys from environment variables
 const PEXELS_API_KEY = process.env.PEXELS_API_KEY;
-const GROQ_API_KEY = process.env.GROQ_API_KEY 
+const GROQ_API_KEY = process.env.GROQ_API_KEY;
 const dataPath = './src/data/blog.json';
 
 async function generateArticle() {
@@ -68,7 +68,7 @@ async function generateArticle() {
           content: prompt
         }
       ],
-      model: "llama-3.3-70b-versatile",
+      model: "llama3-70b-8192",
       temperature: 0.7,
       response_format: { type: "json_object" }
     });
