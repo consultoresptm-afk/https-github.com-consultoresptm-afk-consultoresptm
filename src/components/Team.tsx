@@ -3,7 +3,7 @@ import { CheckCircle2, Briefcase, GraduationCap, Building2 } from "lucide-react"
 const directors = [
   {
     name: "Julio R. Talero T.",
-    role: "Director HSQ",
+    role: "Director de Calidad y Certificaciones",
     email: "hsq@consultoresptm.com",
     education: [
       "Ingeniero Industrial (Universidad Antonio Nariño)",
@@ -22,7 +22,7 @@ const directors = [
   },
   {
     name: "William H. Martinez M.",
-    role: "Director de Sostenibilidad Corporativa",
+    role: "Director Ambiental y Desarrollo Sostenible",
     email: "sostenibilidad@consultoresptm.com",
     education: [
       "Ingeniero Ambiental (Universidad Central)",
