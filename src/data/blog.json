@@ -1,5 +1,15 @@
 [
   {
+    "id": 26,
+    "titulo": "Nuevas tendencias en Sostenibilidad y ESG en Colombia",
+    "slug": "sostenibilidad-esg-colombia",
+    "fecha": "2026-05-28",
+    "categoria": "Sostenibilidad y ESG",
+    "imagen": "https://images.pexels.com/photos/5550904/pexels-photo-5550904.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940",
+    "seo_description": "Conozca las últimas normativas y tendencias en sostenibilidad y ESG",
+    "cuerpo_html": "<h2>Introducción</h2><p>La sostenibilidad y la responsabilidad social corporativa son temas cada vez más relevantes en el ámbito empresarial colombiano. En este artículo, se presentarán las últimas novedades y tendencias en materia de sostenibilidad y ESG (Environmental, Social y Governance) en Colombia.</p><h2>Novedades normativas</h2><p>Recientemente, se han publicado varias normativas que buscan promover la sostenibilidad y la responsabilidad social corporativa en el país. Algunas de las más destacadas son:</p><ul><li>La Ley 1944 de 2022, que establece la obligación de los empresarios de realizar un informe anual de sostenibilidad.</li><li>El Decreto 1200 de 2022, que regula la implementación de la economía circular en Colombia.</li></ul><h2>Buenas prácticas empresariales internacionales</h2><p>Las empresas colombianas deben estar al tanto de las buenas prácticas internacionales en materia de sostenibilidad y ESG. Algunas de las más destacadas son:</p><ul><li>La aplicación de los principios de la economía circular.</li><li>La implementación de sistemas de gestión de la sostenibilidad.</li><li>La realización de informes anuales de sostenibilidad.</li></ul><h2>Conclusión</h2><p>En conclusión, la sostenibilidad y la responsabilidad social corporativa son fundamentales para el éxito de las empresas colombianas. Es importante que los empresarios estén al tanto de las últimas novedades y tendencias en materia de sostenibilidad y ESG, y que implementen buenas prácticas empresariales internacionales para garantizar su competitividad y sostenibilidad en el mercado.</p>"
+  },
+  {
     "id": 1,
     "titulo": "Cumplimiento Ambiental: Lo que debes saber sobre el Decreto 1076 de 2015",
     "categoria": "Gestión Ambiental",
