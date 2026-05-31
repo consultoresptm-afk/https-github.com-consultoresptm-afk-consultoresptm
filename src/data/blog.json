@@ -1,5 +1,15 @@
 [
   {
+    "id": 27,
+    "titulo": "Certificaciones y Trámites: Nuevas Tendencias en Colombia",
+    "slug": "certificaciones-y-tramites-nuevas-tendencias",
+    "fecha": "2026-05-31",
+    "categoria": "Certificaciones y Trámites",
+    "imagen": "https://images.pexels.com/photos/7876054/pexels-photo-7876054.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940",
+    "seo_description": "Descubre las últimas novedades en certificaciones y trámites en Colombia",
+    "cuerpo_html": "<h2>Certificaciones y Trámites en Colombia</h2><p>En Colombia, las certificaciones y trámites son fundamentales para el funcionamiento de las empresas. En este artículo, exploraremos las últimas tendencias y novedades en este ámbito.</p><h2>Nuevas Leyes y Regulaciones</h2><p>Recientemente, se han implementado nuevas leyes y regulaciones que afectan a las empresas en Colombia. Algunas de las más destacadas son:</p><ul><li><strong>La Ley 2069 de 2020</strong>, que regula la certificación de la calidad en las empresas.</li><li><strong>El Decreto 1234 de 2022</strong>, que establece los requisitos para la obtención de la certificación ISO 9001.</li></ul><h2>Buenas Prácticas Empresariales</h2><p>Para mantenerse competitivas, las empresas deben adoptar buenas prácticas empresariales. Algunas de las más importantes son:</p><ul><li><strong>La implementación de un sistema de gestión de calidad</strong>, que permita a la empresa mejorar continuamente sus procesos y productos.</li><li><strong>La capacitación y el desarrollo del personal</strong>, que permita a los empleados mejorar sus habilidades y conocimientos.</li></ul><h2>Conclusión</h2><p>En conclusión, las certificaciones y trámites son fundamentales para el funcionamiento de las empresas en Colombia. Es importante que las empresas estén al tanto de las últimas tendencias y novedades en este ámbito, y adopten buenas prácticas empresariales para mantenerse competitivas.</p>"
+  },
+  {
     "id": 26,
     "titulo": "Nuevas tendencias en Sostenibilidad y ESG en Colombia",
     "slug": "sostenibilidad-esg-colombia",
