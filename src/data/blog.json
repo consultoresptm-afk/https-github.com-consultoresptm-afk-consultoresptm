@@ -1,5 +1,15 @@
 [
   {
+    "id": 30,
+    "titulo": "Evolución de la Salud y Seguridad en el Trabajo en Colombia",
+    "slug": "sst-en-colombia",
+    "fecha": "2026-06-11",
+    "categoria": "SST",
+    "imagen": "https://images.pexels.com/photos/9258892/pexels-photo-9258892.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940",
+    "seo_description": "Conoce las últimas actualizaciones en SST",
+    "cuerpo_html": "<h2>Introducción</h2><p>La Salud y Seguridad en el Trabajo (SST) es un aspecto fundamental para las empresas en Colombia. En este artículo, exploraremos las últimas novedades y tendencias en SST en el país.</p><h2>Novedades Legislativas</h2><p>Recientemente, se han introducido cambios importantes en la legislación relacionada con la SST en Colombia. Entre ellos, se destacan la <strong>Resolución 0312</strong>, que establece los estándares mínimos para la implementación de sistemas de gestión de la SST.</p><ul><li>La resolución establece requisitos para la identificación de peligros y la evaluación de riesgos.</li><li>Se enfatiza la importancia de la participación de los trabajadores en la gestión de la SST.</li><li>Se establecen criterios para la selección de proveedores y contratistas que cumplan con los estándares de SST.</li></ul><h2>Buenas Prácticas Empresariales</h2><p>Además de cumplir con la legislación, es fundamental que las empresas adopten buenas prácticas en SST. Esto puede incluir la implementación de <strong>programas de capacitación</strong> para los trabajadores, la realización de <strong>auditorías internas</strong> y la creación de un <strong>sistema de gestión de la SST</strong> que se ajuste a las necesidades de la empresa.</p>"
+  },
+  {
     "id": 29,
     "titulo": "Nuevas Fronteras en Certificaciones y Trámites Empresariales",
     "slug": "certificaciones-y-tramites-empresariales",
