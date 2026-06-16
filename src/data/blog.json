@@ -1,5 +1,15 @@
 [
   {
+    "id": 31,
+    "titulo": "Sostenibilidad y ESG en Colombia: Avanzando hacia un Futuro Sostenible",
+    "slug": "sostenibilidad-esg-colombia-futuro",
+    "fecha": "2026-06-16",
+    "categoria": "Sostenibilidad y ESG",
+    "imagen": "https://images.pexels.com/photos/30569562/pexels-photo-30569562.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940",
+    "seo_description": "Descubre las últimas tendencias en sostenibilidad y ESG en Colombia",
+    "cuerpo_html": "<h2>Introducción</h2><p>La sostenibilidad y el cumplimiento de los estándares ESG (Environmental, Social y Governance) son fundamentales para el éxito de las empresas en Colombia. En este artículo, exploraremos las últimas novedades y tendencias en este ámbito.</p><h2>Nuevas Normativas y Leyes</h2><p>Recientemente, se han implementado varias normativas y leyes que buscan promover la sostenibilidad y el cumplimiento de los estándares ESG en Colombia. Algunas de las más destacadas incluyen:</p><ul><li><strong>Ley de Economía Circular</strong>: busca reducir el impacto ambiental de las empresas y promover la reutilización y reciclaje de materiales.</li><li><strong>Decreto de Sostenibilidad Empresarial</strong>: establece lineamientos para que las empresas colombianas adopten prácticas sostenibles y cumplan con los estándares ESG.</li></ul><h2>Buenas Prácticas Empresariales</h2><p>Las empresas en Colombia pueden adoptar varias buenas prácticas para mejorar su sostenibilidad y cumplimiento de los estándares ESG. Algunas de las más efectivas incluyen:</p><ul><li><strong>Implementación de sistemas de gestión sostenible</strong>: permite a las empresas identificar y mitigar sus impactos ambientales y sociales.</li><li><strong>Desarrollo de políticas de diversidad e inclusión</strong>: fomenta la igualdad y la justicia social en el lugar de trabajo.</li></ul><h2>Conclusión</h2><p>La sostenibilidad y el cumplimiento de los estándares ESG son fundamentales para el éxito de las empresas en Colombia. Al adoptar buenas prácticas y cumplir con las normativas y leyes vigentes, las empresas pueden contribuir a un futuro más sostenible y próspero para todos.</p>"
+  },
+  {
     "id": 30,
     "titulo": "Evolución de la Salud y Seguridad en el Trabajo en Colombia",
     "slug": "sst-en-colombia",
