@@ -1,5 +1,15 @@
 [
   {
+    "id": 32,
+    "titulo": "Nuevas Perspectivas en Salud y Seguridad en el Trabajo",
+    "slug": "nuevas-perspectivas-en-sst",
+    "fecha": "2026-06-21",
+    "categoria": "SST",
+    "imagen": "https://images.pexels.com/photos/34859873/pexels-photo-34859873.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940",
+    "seo_description": "Descubre las últimas tendencias y actualizaciones en SST",
+    "cuerpo_html": "<h2>Introducción a las Nuevas Perspectivas en SST</h2><p>La salud y seguridad en el trabajo (SST) es un tema cada vez más importante en el mundo empresarial. En Colombia, las normativas y leyes relacionadas con la SST están en constante evolución, por lo que es fundamental que las empresas estén al tanto de las últimas tendencias y actualizaciones.</p><h2>Actualizaciones Normativas Recientes</h2><p>Recientemente, se han realizado cambios significativos en la normativa colombiana relacionada con la SST. Algunos de los cambios más destacados incluyen la actualización de los estándares mínimos para la implementación de sistemas de gestión de la SST, así como la creación de nuevos requisitos para la capacitación y entrenamiento de los trabajadores.</p><h2>Buenas Prácticas Empresariales Internacionales</h2><p>Además de las normativas y leyes locales, es importante que las empresas en Colombia consideren las buenas prácticas empresariales internacionales en materia de SST. Esto incluye la implementación de sistemas de gestión de la SST basados en estándares internacionales, como la norma ISO 45001, y la adopción de prácticas de trabajo seguras y saludables en todos los niveles de la organización.</p><h2>Conclusión</h2><p>En resumen, las empresas en Colombia deben estar al tanto de las últimas tendencias y actualizaciones en SST, tanto a nivel local como internacional. Al implementar buenas prácticas empresariales y cumplir con las normativas y leyes vigentes, las empresas pueden reducir el riesgo de accidentes y enfermedades laborales, mejorar la productividad y la eficiencia, y contribuir a un entorno de trabajo más seguro y saludable.</p><ul><li>Actualización de los estándares mínimos para la implementación de sistemas de gestión de la SST</li><li>Creación de nuevos requisitos para la capacitación y entrenamiento de los trabajadores</li><li>Implementación de sistemas de gestión de la SST basados en estándares internacionales</li><li>Adopción de prácticas de trabajo seguras y saludables en todos los niveles de la organización</li></ul>"
+  },
+  {
     "id": 31,
     "titulo": "Sostenibilidad y ESG en Colombia: Avanzando hacia un Futuro Sostenible",
     "slug": "sostenibilidad-esg-colombia-futuro",
