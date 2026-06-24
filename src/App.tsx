@@ -6,6 +6,7 @@ import { Toaster } from "@/components/ui/toaster";
 import { TooltipProvider } from "@/components/ui/tooltip";
 import { SEOHead } from "./components/SEOHead";
 import { SchemaOrg } from "./components/SchemaOrg";
+import { SpeedInsights } from "@vercel/speed-insights/react";
 import Index from "./pages/Index.tsx";
 import PrivacyPolicy from "./pages/PrivacyPolicy.tsx";
 import BlogPost from "./pages/BlogPost.tsx";
@@ -21,6 +22,7 @@ const App = () => (
         <SchemaOrg />
         <Toaster />
         <Sonner />
+        <SpeedInsights />
         <BrowserRouter future={{ v7_startTransition: true, v7_relativeSplatPath: true }}>
           <Routes>
             <Route path="/" element={<Index />} />
