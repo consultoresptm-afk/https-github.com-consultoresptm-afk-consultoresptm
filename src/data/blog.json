@@ -1,5 +1,15 @@
 [
   {
+    "id": 34,
+    "titulo": "Nuevas Tendencias en la Implementación de Sistemas de Gestión de Salud y Seguridad en el Trabajo",
+    "slug": "nuevas-tendencias-en-sst",
+    "fecha": "2026-07-01",
+    "categoria": "SST",
+    "imagen": "https://images.pexels.com/photos/8943270/pexels-photo-8943270.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940",
+    "seo_description": "Aprende sobre las últimas actualizaciones en Sistemas de Gestión de Salud y Seguridad en el Trabajo",
+    "cuerpo_html": "<h2>Introducción a las Nuevas Tendencias en SST</h2><p>La implementación de sistemas de gestión de salud y seguridad en el trabajo (SST) es fundamental para cualquier empresa que busque minimizar los riesgos laborales y mejorar la calidad de vida de sus empleados.</p><h2>Actualizaciones Normativas Recientes</h2><p>En Colombia, las empresas deben cumplir con las normativas establecidas por el Ministerio del Trabajo, especialmente con la Resolución 0312 que establece los estándares mínimos para la implementación de sistemas de gestión de SST.</p><ul><li>Identificación y evaluación de riesgos laborales</li><li>Implementación de medidas de control y prevención</li><li>Capacitación y entrenamiento para los empleados</li></ul><h2>Buenas Prácticas Empresariales Internacionales</h2><p>Las empresas que buscan implementar sistemas de gestión de SST efectivos deben considerar las siguientes buenas prácticas:</p><ul><li>Establecer políticas y procedimientos claros</li><li>Designar responsables y establecer indicadores de desempeño</li><li>Realizar auditorías y revisiones periódicas</li></ul><h2>Conclusión</h2><p>La implementación de sistemas de gestión de SST es un proceso continuo que requiere la participación activa de todos los miembros de la organización. Al seguir las tendencias y buenas prácticas empresariales internacionales, las empresas pueden minimizar los riesgos laborales y mejorar la calidad de vida de sus empleados.</p>"
+  },
+  {
     "id": 33,
     "titulo": "Certificaciones y Trámites Empresariales en Colombia: Nuevas Tendencias y Requisitos",
     "slug": "certificaciones-y-tramites-empresariales-en-colombia",
