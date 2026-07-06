@@ -1,5 +1,15 @@
 [
   {
+    "id": 35,
+    "titulo": "Gestión Ambiental en Colombia: Nuevas Normativas y Tendencias para Empresas Sostenibles",
+    "slug": "gestion-ambiental-normativas-y-tendencias-colombia",
+    "fecha": "2026-07-06",
+    "categoria": "Gestión Ambiental",
+    "imagen": "https://images.pexels.com/photos/4494160/pexels-photo-4494160.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940",
+    "seo_description": "Descubre las últimas normativas y tendencias en gestión ambiental para empresas en Colombia",
+    "cuerpo_html": "<h2>Introducción a la Gestión Ambiental en Colombia</h2><p>La gestión ambiental es un aspecto fundamental para las empresas en Colombia, ya que el país cuenta con una rica biodiversidad y recursos naturales que deben ser protegidos. En este sentido, el gobierno colombiano ha implementado varias normativas y regulaciones para garantizar el cumplimiento de los estándares ambientales.</p><h2>Nuevas Normativas y Actualizaciones</h2><p>Recientemente, se han implementado varias normativas y actualizaciones en materia de gestión ambiental en Colombia. Algunas de las más destacadas incluyen:</p><ul><li><strong>Decreto 1076 de 2015</strong>: Establece los requisitos para la implementación de sistemas de gestión ambiental en las empresas</li><li><strong>Resolución 0312 de 2022</strong>: Actualiza los estándares mínimos para la gestión ambiental en las empresas</li><li><strong>Ley 1450 de 2011</strong>: Establece los principios y objetivos para la gestión ambiental en Colombia</li></ul><h2>Tendencias y Buenas Prácticas</h2><p>Además de cumplir con las normativas y regulaciones, las empresas en Colombia deben adoptar buenas prácticas y tendencias en materia de gestión ambiental. Algunas de las más destacadas incluyen:</p><ul><li><strong>Economía circular</strong>: Implementar prácticas que reduzcan el desperdicio y promuevan la reutilización y el reciclaje</li><li><strong>Uso eficiente de recursos</strong>: Optimizar el uso de recursos naturales, como agua y energía</li><li><strong>Monitoreo y reporte de indicadores ambientales</strong>: Establecer sistemas para monitorear y reportar indicadores ambientales, como emisiones de gases de efecto invernadero</li></ul>"
+  },
+  {
     "id": 34,
     "titulo": "Nuevas Tendencias en la Implementación de Sistemas de Gestión de Salud y Seguridad en el Trabajo",
     "slug": "nuevas-tendencias-en-sst",
