@@ -1,5 +1,15 @@
 [
   {
+    "id": 37,
+    "titulo": "Tendencias en Gestión de Calidad: Desafíos y Oportunidades en Colombia",
+    "slug": "gestion-de-calidad-en-colombia",
+    "fecha": "2026-07-16",
+    "categoria": "Gestión de Calidad",
+    "imagen": "https://images.pexels.com/photos/12324202/pexels-photo-12324202.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940",
+    "seo_description": "Novedades y tendencias en gestión de calidad para empresas en Colombia",
+    "cuerpo_html": "<h2>Introducción a la Gestión de Calidad</h2><p>La gestión de calidad es un enfoque integral que busca mejorar la eficiencia y eficacia de las organizaciones. En Colombia, las empresas enfrentan desafíos y oportunidades en este ámbito.</p><h2>Novedades Normativas</h2><p>Recientemente, se han actualizado las normativas relacionadas con la gestión de calidad en Colombia. Esto incluye la implementación de la norma ISO 9001:2015, que enfatiza la importancia de la gestión de riesgos y oportunidades.</p><ul><li>Implementación de la norma ISO 9001:2015</li><li>Actualización de las normativas de gestión de calidad en el sector público</li><li>Fortalecimiento de la cultura de la calidad en las organizaciones</li></ul><h2>Buenas Prácticas Empresariales</h2><p>Las empresas en Colombia pueden beneficiarse de la adopción de buenas prácticas empresariales internacionales. Esto incluye la implementación de sistemas de gestión de calidad, la mejora continua y la satisfacción del cliente.</p><strong>Beneficios de la gestión de calidad:</strong><ul><li>Mejora de la eficiencia y eficacia</li><li>Aumento de la satisfacción del cliente</li><li>Reducción de costos y mejoras en la productividad</li></ul>"
+  },
+  {
     "id": 36,
     "titulo": "Avanzando hacia la Sostenibilidad: Novedades y Tendencias en ESG",
     "slug": "novedades-esg-sostenibilidad",
