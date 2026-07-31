@@ -1,5 +1,15 @@
 [
   {
+    "id": 40,
+    "titulo": "Gestión Ambiental en Colombia: Avances y Desafíos",
+    "slug": "gestion-ambiental-avances-desafios",
+    "fecha": "2026-07-31",
+    "categoria": "Gestión Ambiental",
+    "imagen": "https://images.pexels.com/photos/7655605/pexels-photo-7655605.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940",
+    "seo_description": "Descubre los últimos avances y desafíos en gestión ambiental en Colombia",
+    "cuerpo_html": "<h2>Introducción</h2><p>La gestión ambiental en Colombia ha experimentado importantes cambios en los últimos años, impulsados por la necesidad de proteger el medio ambiente y promover el desarrollo sostenible.</p><h2>Novedades Normativas</h2><p>Entre las novedades normativas destacan la implementación del <strong>Decreto 2106 de 2019</strong>, que regula la gestión de residuos peligrosos, y la <strong>Resolución 2135 de 2020</strong>, que establece los requisitos para la implementación de sistemas de gestión ambiental en las empresas.</p><h2>Buenas Prácticas Empresariales</h2><ul><li>Implementación de sistemas de gestión ambiental certificados según la norma <strong>ISO 14001:2015</strong></li><li>Desarrollo de programas de reducción de residuos y consumo de recursos naturales</li><li>Promoción de la conciencia ambiental y la participación de los empleados en la gestión ambiental</li></ul><h2>Desafíos y Oportunidades</h2><p>Entre los desafíos destacan la falta de conciencia ambiental en algunas empresas y la necesidad de invertir en tecnologías y procesos más sostenibles. Sin embargo, también existen oportunidades para las empresas que adopten prácticas ambientales sostenibles, como la mejora de la imagen corporativa y la reducción de costos.</p>"
+  },
+  {
     "id": 39,
     "titulo": "Sostenibilidad y ESG en Colombia: Novedades y Tendencias para Empresas",
     "slug": "sostenibilidad-esg-colombia",
