@@ -1,5 +1,15 @@
 [
   {
+    "id": 43,
+    "titulo": "Tendencias en Gestión Ambiental: Oportunidades y Desafíos en Colombia",
+    "slug": "gestion-ambiental-tendencias-oportunidades-desafios",
+    "fecha": "2026-08-11",
+    "categoria": "Gestión Ambiental",
+    "imagen": "https://images.pexels.com/photos/14024422/pexels-photo-14024422.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940",
+    "seo_description": "Conozca las últimas tendencias en gestión ambiental en Colombia",
+    "cuerpo_html": "<h2>Introducción</h2><p>La gestión ambiental es un aspecto crucial para las empresas en Colombia, ya que el país cuenta con una rica biodiversidad y una creciente conciencia sobre la importancia de proteger el medio ambiente.</p><h2>Novedades normativas</h2><p>Recientemente, se han implementado varias normativas que buscan reducir el impacto ambiental de las empresas en Colombia. Algunas de las novedades más destacadas incluyen:</p><ul><li>La implementación del <strong>Decreto 1200 de 2022</strong>, que regula la gestión de residuos peligrosos en el país.</li><li>La creación del <strong>Programa Nacional de Gestión Ambiental</strong>, que busca promover la sostenibilidad y la reducción del impacto ambiental en las empresas.</li></ul><h2>Tendencias críticas</h2><p>Algunas de las tendencias críticas en gestión ambiental en Colombia incluyen:</p><ul><li><strong>Economía circular</strong>: La implementación de modelos de economía circular que buscan reducir el desperdicio y promover la reutilización de recursos.</li><li><strong>Generación de energías renovables</strong>: La creciente demanda de energías renovables, como la energía solar y eólica, como alternativa a los combustibles fósiles.</li></ul><h2>Conclusión</h2><p>La gestión ambiental es un aspecto fundamental para las empresas en Colombia, y es importante que estén al tanto de las novedades normativas y tendencias críticas en este campo. Al implementar prácticas sostenibles y reducir el impacto ambiental, las empresas pueden contribuir a la protección del medio ambiente y mejorar su reputación y competitividad en el mercado.</p>"
+  },
+  {
     "id": 42,
     "titulo": "Certificaciones y Trámites Empresariales en Colombia: Un Enfoque Integral",
     "slug": "certificaciones-y-tramites-empresariales-en-colombia",
